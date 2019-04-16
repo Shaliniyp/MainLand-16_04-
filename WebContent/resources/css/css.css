@@ -1,0 +1,334 @@
+@import url('https://use.fontawesome.com/releases/v5.7.0/css/all.css');
+
+body {
+	margin: 0px;
+	padding: 0px;
+	line-height: 1.5em;
+	font-family: Verdana, Arial, san-serif;
+	font-size: 11px;
+}
+
+a:link, a:visited {
+	color: #b5cb7e;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:active, a:hover {
+	color: #e04229d6;
+	
+}
+
+p {
+	margin: 0px;
+	padding: 0px;
+}
+
+<!--
+img {
+	margin-left: -50px;
+	margin-top: 20px;
+	height: 250px;
+	margin-bottom: 20px;
+	margin-right: 30px;
+	padding: 10px;
+	border: none;
+}
+
+-->
+.cleaner {
+	clear: both;
+	width: 100%;
+	height: 1px;
+	font-size: 1px;
+}
+
+.cleaner_with_height {
+	clear: both;
+	width: 100%;
+	height: 30px;
+	font-size: 1px;
+}
+
+.cleaner_with_width {
+	float: left;
+	width: 20px;
+	height: 30px;
+	font-size: 1px;
+}
+
+#templatemo_container {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0 10px;
+	background: orange repeat-y;
+}
+
+/* menu */
+#templatemo_menu {
+	clear: both;
+	width: 960px;
+	height: 45px;
+	background: url('../images/templatemo_menu_bg.jpg') no-repeat;
+}
+
+#templatemo_menu ul {
+	padding: 13px 0 0 0;
+	margin: 0;
+	list-style: none;
+}
+
+#templatemo_menu ul li {
+	display: inline;
+}
+
+#templatemo_menu ul li a {
+	float: left;
+	padding: 0 20px;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-decoration: none;
+	color: #969547;
+}
+
+#templatemo_menu li a:hover, #templatemo_menu li .current {
+	color: #fcf88e;
+}
+
+/* end of menu*/
+
+/* header */
+#templatemo_header {
+	clear: both;
+	width: 960px;
+	height: 285px;
+	padding: 0;
+	margin: 0;
+	background: url('../images/12.jpg') no-repeat;
+}
+
+#templatemo_header a, a:hover {
+		color: #e04229d6;
+
+}
+
+#templatemo_header #templatemo_special_offers {
+	float: left;
+	font-size: 14px;
+	margin-top: 95px;
+	margin-left: 490px;
+	width: 180px;
+}
+
+#templatemo_special_offers a {
+	font-size: 12px;
+}
+
+#templatemo_special_offers  p {
+	margin: 0 0 20px 0;
+}
+
+#templatemo_special_offers p span {
+	font-size: 18px;
+}
+
+#templatemo_header #templatemo_new_books {
+	float: left;
+	margin-top: 90px;
+	margin-left: 55px;
+	width: 180px;
+}
+
+#templatemo_new_books ul {
+	margin: 0 0 10px 0;
+	padding: 0 0 0 20px;
+}
+
+#templatemo_new_books li {
+	margin: 0;
+	padding: 0;
+}
+
+/* end of header */
+
+/* content */
+#templatemo_content {
+	clear: both;
+	width: 100%;
+	padding: 0 20px;
+}
+
+#templatemo_content #templatemo_content_left {
+	float: left;
+	width: 200px;
+	padding: 10px;
+	
+}
+
+#templatemo_content #templatemo_content_right {
+	float: right;
+	width: 670px;
+}
+
+#templatemo_content #templatemo_content_center {
+	float: center;
+	width: 100%;
+}
+
+#templatemo_content #templatemo_content_bar {
+	width: 100%;
+	height: 5px;
+}
+
+#templatemo_content_bar h1 {
+	padding: 3px;
+	margin: 0 0 5px 0;
+	font-size: 15px;
+	color: #f9f9f9;
+	background: #0aade0c2;;
+}
+
+#templatemo_content_left .templatemo_content_left_section {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+.templatemo_content_left_section h1 {
+	font-size: 20px;
+	color: #ffffff;
+	padding: 0 0 5px 0;
+	margin: 0 0 10px 0;
+	border-bottom: 1px dotted black;
+}
+
+.templatemo_content_left_section ul {
+	padding: 0;
+	margin: 0;
+}
+
+.templatemo_content_left_section ul li {
+	margin-left: 15px;
+	padding: 0 0 5px 10px;
+	list-style: square;
+}
+
+.templatemo_content_left_section ul li a {
+	font-size: 12px;
+	font-weight: lighter;
+	text-decoration: none;
+	color: #FFFF00;
+}
+
+.templatemo_content_left_section li a:hover,
+	.templatemo_content_left_section li .current {
+	color: #fcf88e;
+}
+
+#templatemo_content_right .templatemo_product_box {
+	float: left;
+	width: 303px;
+	height: 250px;
+	padding: 10px;
+	border: none;
+}
+
+#templatemo_content_center .templatemo_product_box {
+	width: 80%;
+	margin-left: 150px;
+	border: 1px solid #333;
+}
+
+#templatemo_content_right h1 {
+	padding: 10px;
+	margin: 0 0 20px 0;
+	font-size: 15px;
+	color: black;
+}
+
+#templatemo_content_center h1 {
+	padding: 10px;
+	margin: 0 0 20px 0;
+	font-size: 15px;
+	color: #FFFFFF;
+	background: url(../images/templatemo_h1_bg.jpg);
+}
+
+#templatemo_content_right h2 {
+	padding: 0 0 0 0;
+	margin: 0 0 20px 0;
+	font-size: 12px;
+	color: #e6e154;
+}
+
+#templatemo_content_center h2 {
+	padding: 0 0 0 0;
+	margin: 0 0 10px 0;
+	font-size: 12px;
+	color: #e6e154;
+}
+
+#templatemo_content_center h3 {
+	padding: 0;
+	margin: 0 0 10px 0;
+	font-size: 18px;
+	color: #85391f;
+}
+
+#templatemo_content_center ul {
+	margin: 0 0 10px 0;
+	padding: 0 0 0 10px;
+	list-style: none;
+}
+
+#templatemo_content_center li {
+	padding: 0 0 3px 0;
+}
+
+#templatemo_content_right h3 {
+	padding: 0;
+	margin: 0 0 20px 0;
+	font-size: 18px;
+	color: #85391f;
+}
+
+#templatemo_content_right ul {
+	margin: 0 0 20px 0;
+	padding: 0 0 0 20px;
+	list-style: none;
+}
+
+#templatemo_content_right li {
+	padding: 0 0 3px 0;
+}
+
+#templatemo_content_right .image_panel {
+	float: left;
+	width: 100px;
+	margin-right: 20px;
+}
+
+#templatemo_content_right p {
+	text-align: justify;
+	padding: 0 0 8px 0;
+}
+
+.templatemo_product_box h1 span {
+	font-weight: normal;
+}
+
+.templatemo_product_box img {
+	float: left;
+	margin-right: 20px;
+	width: 50%;
+	height: 90%;
+}
+
+.templatemo_product_box .product_info {
+	float: left;
+	width: 180px;
+}
+
+.product_info p {
+	margin-bottom: 15px;
+}

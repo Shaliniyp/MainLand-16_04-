@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Restaurant E-menu System</title>
+<link href="resources/css/css.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" type="text/css" />
+<style>
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: Arial;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width:100%;
+ height:100%;
+  overflow: hidden;
+} 
+
+
+.row {
+	display: -ms-flexbox; /* IE10 */
+	display: flex;
+	-ms-flex-wrap: wrap; /* IE10 */
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+
+.column {
+	-ms-flex: 25%; /* IE10 */
+	flex: 25%;
+	max-width: 25%;
+	padding: 0 4px;
+}
+
+.column img {
+	margin-top: 8px;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+	.column {
+		-ms-flex: 50%;
+		flex: 50%;
+		max-width: 50%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.column {
+		-ms-flex: 100%;
+		flex: 100%;
+		max-width: 100%;
+	}
+}
+
+.myImg {
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.3s;
+	background: none;
+}
+
+.myImg:hover {
+	opacity: 0.7;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 75%;
+	height: 60%;
+	max-width: 700px;
+}
+
+#caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+}
+
+.modal-content, #caption {
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+@
+-webkit-keyframes zoom {
+	from {-webkit-transform: scale(0)
+}
+
+to {
+	-webkit-transform: scale(1)
+}
+
+}
+@
+keyframes zoom {
+	from {transform: scale(0)
+}
+
+to {
+	transform: scale(1)
+}
+
+}
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+a.one:link {
+	color: #ff0000;
+}
+
+a.one:visited {
+	color: #0000ff;
+}
+
+a.one:hover {
+	font-size: 150%;
+}
+
+@media only screen and (max-width: 700px) {
+	.modal-content {
+		width: 100%;
+	}
+}
+
+div.ex2 {
+ width:100%;
+ height:100%;
+  overflow: hidden;
+}
+
+.has-bg-img:after {
+    content:'';
+    background: url('./resources/images/111.jpeg') no-repeat center center fixed; ;
+    position: absolute;
+    top:0px;
+    left: 0px;
+   -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    min-width:1600px;
+    min-height:100%;
+    z-index:-1;
+    /* opacity: 0.9; */ /* Here is your opacity */
+}
+.has-bg-img {
+    position: relative;
+    width:100%;
+    height:100%;
+    padding:50px;
+    font-weight:bold;
+    text-align:center;
+}
+
+.rainbow {
+background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #332612), color-stop(0.15, #FF5722), color-stop(0.3, #FF5722), color-stop(0.45, #e4e4e4), color-stop(0.6, #ffffff),color-stop(0.75, #29d030), color-stop(0.9, #4CAF50), color-stop(1, #0f1d00) );  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="ex2">
+	<div class="has-bg-img" style="height:100%;">
+	
+	
+	
+
+			<h1 align="center"
+				style="color:#c79559;margin-top:-15px; margin-left:250px;font-size:40px;font-family: Lucida Calligraphy;"><u>Inspiring nation with food</u></h1>
+		
+
+	<div id="templatemo_content">
+		<div id="templatemo_content_left"
+			style="margin-top: 250px; height: 230px; width: 350px; margin-left:150px;">
+			<div class="templatemo_content_left_section">
+								<h1
+					style="text-align: center;color: #111110; border-bottom: 1px dashed white; font-family: Lucida Calligraphy; "><i class="fas fa-praying-hands"
+					style="font-size: 30px; padding: 5px; color: white"><a
+					class="one" href="index.html"
+					style="color:  white; font-weight: bold; font-family: Lucida Calligraphy; ">Welcome</i></a></h1>
+				<i class="fa fa-home"
+					style="font-size: 30px; padding: 5px; color:  white;"><a
+					class="one" href="HomePage.html"
+					style="color:  white; font-weight: bold;"> Home </a></i><br /> <i
+					class="fa fa-users"
+					style="font-size: 30px; padding: 5px; color:  white;"> <a
+					class="one" href="LoginPage.jsp"
+					style="color:  white; font-weight: bold;">Login </a></i><br /> <i
+					class="fa fa-info-circle"
+					style="font-size: 30px; padding: 5px; color:  white;"><a
+					class="one" href="AboutUs.html"
+					style="color:  white; font-weight: bold;">About Us</a></i><br /> <i
+					class="fa fa-envelope"
+					style="font-size: 30px; padding: 5px; color:  white;"><a
+					class="one" href="ContactUs.html"
+					style="color:  white; font-weight: bold;">Contact Us </a> </i><br />
+			</div>
+
+		</div>
+		
+		<div>
+			
+		
+  					
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<div class="row"> 
+  <div class="column">
+    <img class="myImg" src=".\resources\images\1.jpg" style="width: 150%; margin-left: -20px; margin-top: 10px;">
+    <img class="myImg" src=".\resources\images\2.jpg" style="width: 150%; margin-left: 245px; margin-top: -45px;">
+   <!--  <img class="myImg" src=".\resources\images\3.jpg" style="width: 100%; margin-left: 780px; margin-top: 10px;">
+    <img class="myImg" src=".\resources\images\4.jpg" style="width: 100%; margin-left: 50px; margin-top: -320px;"> -->
+  </div>
+  
+  <div class="column">
+<!--    <img class="myImg" src=".\resources\images\4.jpg" style="width: 150%; margin-left: 120px; margin-top: 180px;">
+ -->    <img class="myImg" src=".\resources\images\3.jpg" style="width: 150%; margin-left: -320px; margin-top: 470px;">
+  
+  </div>
+  <!-- <div class="column">
+    <img class="myImg" src=".\resources\images\5.jpg" style="width: 100%; margin-left: 120px; margin-top: -50px;">
+    <img class="myImg" src=".\resources\images\6.jpg" style="width: 100%; margin-left: 120px; margin-top: 20px;">
+  </div>   -->
+</div>
+
+
+<div id="myModal" class="modal">
+  <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+  <img class="modal-content" id="img01">
+
+  <div id="caption"></div>
+</div>
+
+<script>
+	
+	var modal = document.getElementById('myModal');
+	var img = $('.myImg');
+	var modalImg = $("#img01");
+	var captionText = document.getElementById("caption");
+	$('.myImg').click(function() {
+		modal.style.display = "block";
+		var newSrc = this.src;
+		modalImg.attr('src', newSrc);
+		captionText.innerHTML = this.alt;
+	});
+
+	var span = document.getElementsByClassName("close")[0];
+	span.onclick = function() {
+		modal.style.display = "none";
+	}
+</script>	
+
+</div>		
+<div class="cleaner_with_height">&nbsp;</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
